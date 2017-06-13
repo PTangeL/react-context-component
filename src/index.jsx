@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Cntxt extends Component {
+class ContextProvider extends Component {
   getChildContext () {
     const { children, ...rest } = this.props
     return rest
@@ -22,11 +22,11 @@ class Context extends Component {
       },
       {}
     )
-    Cntxt.childContextTypes = contextTypes
+    ContextProvider.childContextTypes = contextTypes
   }
 
   render () {
-    return <Cntxt {...this.props} />
+    return <ContextProvider {...this.props} />
   }
 }
 
