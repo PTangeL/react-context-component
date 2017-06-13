@@ -12,7 +12,6 @@ const config = {
   external: ['react', 'prop-types'],
   globals: {
     react: 'React',
-    'prop-types': 'PropTypes'
   },
   format: 'umd',
   moduleName: 'ReactWidth',
