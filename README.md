@@ -4,7 +4,6 @@ This is a React component that let you add things in the context. This component
 
 For instance, instead of doing this
 ```react
-
 <Provider store={store}>
 	<GridProvider grid={grid}>
 		<WidthProvider width={width}>
