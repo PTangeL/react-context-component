@@ -1,6 +1,6 @@
 # React Context Component
 
-This is a React component that let you add things in the context. This component replaces the need of creating many different "Providers" where each one does the same.
+This is a React component that let you add things in the context. This component replaces the need of creating many different "Providers" where each Provider does the same.
 
 For instance, instead of doing this
 ```react
