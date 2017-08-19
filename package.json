@@ -1,6 +1,6 @@
 {
   "name": "react-context-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leanjscom/react-context-component.git"
@@ -21,7 +21,7 @@
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "clean": "rimraf lib dist es coverage",
     "prepublish": "npm run clean && npm run build",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "cross-env BABEL_ENV=test node scripts/test.js --env=jsdom",
     "coverage": "node scripts/test.js --coverage",
     "eslint": "./node_modules/.bin/esw --color -w --ext .jsx,.js src/**",
     "prettier": "./node_modules/.bin/prettier-standard --trailing-comma es5 --single-quote --write src/**/*.js src/**/*.jsx",
@@ -117,9 +117,6 @@
     "testEnvironment": "node",
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web"
-    }
+    ]
   }
 }

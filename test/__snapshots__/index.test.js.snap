@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`renders Context correctly 1`] = `
 <p>
+  data from context: 
+  1
+  , data from props 
+</p>
+`;
+
+exports[`renders a component withContext correctly 1`] = `
+<p>
+  data from context: 
+  1
+  , data from props 
   1
 </p>
 `;
