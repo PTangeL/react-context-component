@@ -1,8 +1,10 @@
 # React Context Component
 
-This is a React component that let you add things in the context. This component replaces the need of creating many different "Providers" where each Provider does the same.
+This is a React component that lets you add things in the context. Put simply, the [context feature](https://facebook.github.io/react/docs/context.html) basically lets you to pass some data through all nodes in the components tree.
 
-For instance, instead of doing this
+This component replaces the need to create many different "Providers", where each Provider does the same job.
+
+For instance, instead of doing this:
 ```react
 <Provider store={store}>
 	<GridProvider grid={grid}>
