@@ -11,14 +11,15 @@ const config = {
   entry: 'src/index.jsx',
   external: ['react', 'prop-types'],
   globals: {
-    react: 'React',
+    react: 'React'
   },
   format: 'umd',
   moduleName: 'ReactWidth',
   plugins: [
     nodeResolve({ extensions: ['.js', '.jsx'] }),
     babel({
-      exclude: '**/node_modules/**'
+      exclude: '**/node_modules/**',
+      plugins: ['babel-plugin-external-helpers']
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify(env)

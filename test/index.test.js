@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import renderer from 'react-test-renderer'
-import { Context } from '../src'
-import { withContext } from '../src'
+import Context, { withContext } from '../src'
 
 const RenderDataContext = (props, { data }) => (
   <p>data from context: {data}, data from props {props.data}</p>
