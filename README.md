@@ -31,4 +31,4 @@ If you are using yarn:
 `yarn add react-context-component`
 
 If you are using npm:
-`npm i react-context-component
+`npm i react-context-component`
